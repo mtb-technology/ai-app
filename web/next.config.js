@@ -1,4 +1,4 @@
-// Get Onyx Web Version
+// Get ChatEmployee Web Version
 const { version: package_version } = require("./package.json"); // version from package.json
 const env_version = process.env.ONYX_VERSION; // version from env variable
 // Use env version if set & valid, otherwise default to package version

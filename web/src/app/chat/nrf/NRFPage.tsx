@@ -319,11 +319,11 @@ export default function NRFPage({
       <Dialog open={showTurnOffModal} onOpenChange={setShowTurnOffModal}>
         <DialogContent className="w-fit max-w-[95%]">
           <DialogHeader>
-            <DialogTitle>Turn off Onyx new tab page?</DialogTitle>
+            <DialogTitle>Turn off ChatEmployee new tab page?</DialogTitle>
             <DialogDescription>
               You&apos;ll see your browser&apos;s default new tab page instead.
               <br />
-              You can turn it back on anytime in your Onyx settings.
+              You can turn it back on anytime in your ChatEmployee settings.
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="flex gap-2 justify-center">

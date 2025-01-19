@@ -29,7 +29,7 @@ import { deleteApiKey, regenerateApiKey } from "./lib";
 import { OnyxApiKeyForm } from "./OnyxApiKeyForm";
 import { APIKey } from "./types";
 
-const API_KEY_TEXT = `API Keys allow you to access Onyx APIs programmatically. Click the button below to generate a new API Key.`;
+const API_KEY_TEXT = `API Keys allow you to access ChatEmployee APIs programmatically. Click the button below to generate a new API Key.`;
 
 function NewApiKeyModal({
   apiKey,

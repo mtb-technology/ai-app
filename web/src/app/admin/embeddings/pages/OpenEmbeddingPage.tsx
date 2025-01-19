@@ -59,7 +59,7 @@ export default function OpenEmbeddingPage({
         <br />
         <b>NOTE:</b> not all models listed will work with Onyx, since some have
         unique interfaces or special requirements. If in doubt, reach out to the
-        Onyx team.
+        ChatEmployee team.
       </Text>
       {!configureModel && (
         <Button

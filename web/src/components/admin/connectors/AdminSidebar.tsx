@@ -95,7 +95,7 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
           key={"onyxVersion"}
         >
           <h2 className="text-xs text-text w-52 font-medium pb-2">
-            Onyx version: {combinedSettings.webVersion}
+            ChatEmployee version: {combinedSettings.webVersion}
           </h2>
         </div>
       )}

@@ -40,7 +40,7 @@ const Main = () => {
 
       <p className="mb-2 text-sm text-muted-foreground">
         Setup Slack bots that connect to Onyx. Once setup, you will be able to
-        ask questions to Onyx directly from Slack. Additionally, you can:
+        ask questions to ChatEmployee directly from Slack. Additionally, you can:
       </p>
 
       <div className="mb-2">
@@ -62,13 +62,13 @@ const Main = () => {
         Follow the{" "}
         <a
           className="text-blue-500 hover:underline"
-          href="https://docs.onyx.app/slack_bot_setup"
+          href="https://www.chatemployee.ai/slack_bot_setup"
           target="_blank"
           rel="noopener noreferrer"
         >
           guide{" "}
         </a>
-        found in the Onyx documentation to get started!
+        found in the ChatEmployee documentation to get started!
       </p>
 
       <Link

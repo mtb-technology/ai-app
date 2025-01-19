@@ -1498,7 +1498,7 @@ export function AssistantEditor({
                       setFieldValue("task_prompt", e.target.value);
                     }}
                     explanationText="Learn about prompting in our docs!"
-                    explanationLink="https://docs.onyx.app/guides/assistants"
+                    explanationLink="https://www.chatemployee.ai/guides/assistants"
                     className="[&_textarea]:placeholder:text-text-muted/50"
                   />
                 </>

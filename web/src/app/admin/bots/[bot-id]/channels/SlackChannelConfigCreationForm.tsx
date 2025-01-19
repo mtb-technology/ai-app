@@ -292,7 +292,7 @@ export const SlackChannelConfigCreationForm = ({
                       name="show_continue_in_web_ui"
                       removeIndent
                       label="Show Continue in Web UI button"
-                      tooltip="If set, will show a button at the bottom of the response that allows the user to continue the conversation in the Onyx Web UI"
+                      tooltip="If set, will show a button at the bottom of the response that allows the user to continue the conversation in the ChatEmployee Web UI"
                     />
                     <div className="flex flex-col space-y-3 mt-2">
                       <BooleanFormField

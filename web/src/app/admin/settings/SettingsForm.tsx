@@ -240,7 +240,7 @@ export function SettingsForm() {
             <h2 className="text-xl font-bold">Enable Anonymous Users</h2>
             <p>
               Are you sure you want to enable anonymous users? This will allow
-              anyone to use Onyx without signing in.
+              anyone to use ChatEmployee without signing in.
             </p>
             <div className="flex justify-end gap-2">
               <Button
@@ -259,7 +259,7 @@ export function SettingsForm() {
           <Title className="mt-8 mb-4">Chat Settings</Title>
           <IntegerInput
             label="Chat Retention"
-            sublabel="Enter the maximum number of days you would like Onyx to retain chat messages. Leaving this field empty will cause Onyx to never delete chat messages."
+            sublabel="Enter the maximum number of days you would like ChatEmployee to retain chat messages. Leaving this field empty will cause ChatEmployee to never delete chat messages."
             value={chatRetention === "" ? null : Number(chatRetention)}
             onChange={(e) => {
               const numValue = parseInt(e.target.value, 10);

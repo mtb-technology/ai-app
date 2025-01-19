@@ -140,7 +140,7 @@ export function WhitelabelingForm() {
             <TextFormField
               label="Application Name"
               name="application_name"
-              subtext={`The custom name you are giving Onyx for your organization. This will replace 'Onyx' everywhere in the UI.`}
+              subtext={`The custom name you are giving ChatEmployee for your organization. This will replace 'Onyx' everywhere in the UI.`}
               placeholder="Custom name which will replace 'Onyx'"
               disabled={isSubmitting}
             />
@@ -181,7 +181,7 @@ export function WhitelabelingForm() {
               </div>
             ) : (
               <SubLabel>
-                Specify your own logo to replace the standard Onyx logo.
+                Specify your own logo to replace the standard ChatEmployee logo.
               </SubLabel>
             )}
 
@@ -202,7 +202,7 @@ export function WhitelabelingForm() {
                 <Text>
                   Read{" "}
                   <Link
-                    href={"https://docs.onyx.app/enterprise_edition/theming"}
+                    href={"https://www.chatemployee.ai/enterprise_edition/theming"}
                     className="text-link cursor-pointer"
                   >
                     the docs

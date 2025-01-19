@@ -89,7 +89,7 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
           </div>
         ))}
       </nav>
-      {combinedSettings.webVersion && (
+      {/* {combinedSettings.webVersion && (
         <div
           className="flex flex-col mt-6 items-center justify-center w-full"
           key={"onyxVersion"}
@@ -98,7 +98,7 @@ export function AdminSidebar({ collections }: { collections: Collection[] }) {
             ChatEmployee version: {combinedSettings.webVersion}
           </h2>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

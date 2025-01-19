@@ -136,18 +136,18 @@ export function ClientLayout({
                     ),
                     link: "/admin/documents/explorer",
                   },
-                  {
-                    name: (
-                      <div className="flex">
-                        <ThumbsUpIconSkeleton
-                          className="text-icon-settings-sidebar"
-                          size={18}
-                        />
-                        <div className="ml-1">Feedback</div>
-                      </div>
-                    ),
-                    link: "/admin/documents/feedback",
-                  },
+                  // {
+                  //   name: (
+                  //     <div className="flex">
+                  //       <ThumbsUpIconSkeleton
+                  //         className="text-icon-settings-sidebar"
+                  //         size={18}
+                  //       />
+                  //       <div className="ml-1">Feedback</div>
+                  //     </div>
+                  //   ),
+                  //   link: "/admin/documents/feedback",
+                  // },
                 ],
               },
               {
@@ -167,15 +167,15 @@ export function ClientLayout({
                   },
                   ...(!isCurator
                     ? [
-                        {
-                          name: (
-                            <div className="flex">
-                              <SlackIconSkeleton className="text-icon-settings-sidebar" />
-                              <div className="ml-1">Slack Bots</div>
-                            </div>
-                          ),
-                          link: "/admin/bots",
-                        },
+                        // {
+                        //   name: (
+                        //     <div className="flex">
+                        //       <SlackIconSkeleton className="text-icon-settings-sidebar" />
+                        //       <div className="ml-1">Slack Bots</div>
+                        //     </div>
+                        //   ),
+                        //   link: "/admin/bots",
+                        // },
                         {
                           name: (
                             <div className="flex">
@@ -310,18 +310,18 @@ export function ClientLayout({
                           ),
                           link: "/admin/api-key",
                         },
-                        {
-                          name: (
-                            <div className="flex">
-                              <ShieldIconSkeleton
-                                className="text-icon-settings-sidebar"
-                                size={18}
-                              />
-                              <div className="ml-1">Token Rate Limits</div>
-                            </div>
-                          ),
-                          link: "/admin/token-rate-limits",
-                        },
+                        // {
+                        //   name: (
+                        //     <div className="flex">
+                        //       <ShieldIconSkeleton
+                        //         className="text-icon-settings-sidebar"
+                        //         size={18}
+                        //       />
+                        //       <div className="ml-1">Token Rate Limits</div>
+                        //     </div>
+                        //   ),
+                        //   link: "/admin/token-rate-limits",
+                        // },
                       ],
                     },
                     ...(enableEnterprise
@@ -353,71 +353,71 @@ export function ClientLayout({
                                 ),
                                 link: "/admin/performance/query-history",
                               },
-                              {
-                                name: (
-                                  <div className="flex">
-                                    <FiBarChart2
-                                      className="text-icon-settings-sidebar"
-                                      size={18}
-                                    />
-                                    <div className="ml-1">Custom Analytics</div>
-                                  </div>
-                                ),
-                                link: "/admin/performance/custom-analytics",
-                              },
+                              // {
+                              //   name: (
+                              //     <div className="flex">
+                              //       <FiBarChart2
+                              //         className="text-icon-settings-sidebar"
+                              //         size={18}
+                              //       />
+                              //       <div className="ml-1">Custom Analytics</div>
+                              //     </div>
+                              //   ),
+                              //   link: "/admin/performance/custom-analytics",
+                              // },
                             ],
                           },
                         ]
                       : []),
-                    {
-                      name: "Settings",
-                      items: [
-                        {
-                          name: (
-                            <div className="flex">
-                              <SettingsIconSkeleton
-                                className="text-icon-settings-sidebar"
-                                size={18}
-                              />
-                              <div className="ml-1">Workspace Settings</div>
-                            </div>
-                          ),
-                          link: "/admin/settings",
-                        },
-                        ...(enableEnterprise
-                          ? [
-                              {
-                                name: (
-                                  <div className="flex">
-                                    <PaintingIconSkeleton
-                                      className="text-icon-settings-sidebar"
-                                      size={18}
-                                    />
-                                    <div className="ml-1">Whitelabeling</div>
-                                  </div>
-                                ),
-                                link: "/admin/whitelabeling",
-                              },
-                            ]
-                          : []),
-                        ...(enableCloud
-                          ? [
-                              {
-                                name: (
-                                  <div className="flex">
-                                    <MdOutlineCreditCard
-                                      className="text-icon-settings-sidebar"
-                                      size={18}
-                                    />
-                                    <div className="ml-1">Billing</div>
-                                  </div>
-                                ),
-                                link: "/admin/billing",
-                              },
-                            ]
-                          : []),
-                      ],
-                    },
+                    // {
+                    //   name: "Settings",
+                    //   items: [
+                    //     {
+                    //       name: (
+                    //         <div className="flex">
+                    //           <SettingsIconSkeleton
+                    //             className="text-icon-settings-sidebar"
+                    //             size={18}
+                    //           />
+                    //           <div className="ml-1">Workspace Settings</div>
+                    //         </div>
+                    //       ),
+                    //       link: "/admin/settings",
+                    //     },
+                    //     ...(enableEnterprise
+                    //       ? [
+                    //           {
+                    //             name: (
+                    //               <div className="flex">
+                    //                 <PaintingIconSkeleton
+                    //                   className="text-icon-settings-sidebar"
+                    //                   size={18}
+                    //                 />
+                    //                 <div className="ml-1">Whitelabeling</div>
+                    //               </div>
+                    //             ),
+                    //             link: "/admin/whitelabeling",
+                    //           },
+                    //         ]
+                    //       : []),
+                    //     ...(enableCloud
+                    //       ? [
+                    //           {
+                    //             name: (
+                    //               <div className="flex">
+                    //                 <MdOutlineCreditCard
+                    //                   className="text-icon-settings-sidebar"
+                    //                   size={18}
+                    //                 />
+                    //                 <div className="ml-1">Billing</div>
+                    //               </div>
+                    //             ),
+                    //             link: "/admin/billing",
+                    //           },
+                    //         ]
+                    //       : []),
+                    //   ],
+                    // },
                   ]
                 : []),
             ]}

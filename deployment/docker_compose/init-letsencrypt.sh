@@ -23,7 +23,7 @@ COMPOSE_CMD=$(docker_compose_cmd)
 
 # Only add www to domain list if domain wasn't explicitly set as a subdomain
 if [[ ! $DOMAIN == www.* ]]; then
-    domains=("$DOMAIN" "www.$DOMAIN")
+    domains=("$DOMAIN")
 else
     domains=("$DOMAIN")
 fi

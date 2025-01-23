@@ -7,6 +7,7 @@ from fastapi import HTTPException
 from fastapi import Query
 from fastapi import UploadFile
 from pydantic import BaseModel
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from onyx.auth.users import current_admin_user
@@ -191,8 +192,7 @@ def create_persona(
         name=build_prompt_name_from_persona_name(persona_upsert_request.name),
         system_prompt=persona_upsert_request.system_prompt,
         task_prompt=persona_upsert_request.task_prompt,
-        # TODO: The PersonaUpsertRequest should provide the value for datetime_aware
-        datetime_aware=False,
+        datetime_aware=persona_upsert_request.datetime_aware,
         include_citations=persona_upsert_request.include_citations,
         prompt_id=prompt_id,
     )
@@ -236,8 +236,7 @@ def update_persona(
         db_session=db_session,
         user=user,
         name=build_prompt_name_from_persona_name(persona_upsert_request.name),
-        # TODO: The PersonaUpsertRequest should provide the value for datetime_aware
-        datetime_aware=False,
+        datetime_aware=persona_upsert_request.datetime_aware,
         system_prompt=persona_upsert_request.system_prompt,
         task_prompt=persona_upsert_request.task_prompt,
         include_citations=persona_upsert_request.include_citations,
@@ -277,8 +276,14 @@ def create_label(
     _: User | None = Depends(current_user),
 ) -> PersonaLabelResponse:
     """Create a new assistant label"""
-    label_model = create_assistant_label(name=label.name, db_session=db)
-    return PersonaLabelResponse.from_model(label_model)
+    try:
+        label_model = create_assistant_label(name=label.name, db_session=db)
+        return PersonaLabelResponse.from_model(label_model)
+    except IntegrityError:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Label with name '{label.name}' already exists. Please choose a different name.",
+        )
 
 
 @admin_router.patch("/label/{label_id}")
